@@ -52,13 +52,12 @@ SOFTWARE.
 # The Instinct GPU Driver: Bifurcation from ROCm userspace
 
 Today ROCm is synonymous with software for AMD's Instinct GPUs. ROCm describes
-everything from the driver to the runtime to the our libraries that enable AI and HPC software stacks. 
-Starting in ROCm 6.4, we begin the process to change our software ontology to include the Instinct Datacenter GPU driver. 
+everything from the driver to the runtime to the our libraries that enable AI and HPC software stacks.
+Starting in ROCm 6.4, we begin the process to change our software ontology to include the Instinct Datacenter GPU driver.
 This driver will bifurcate from the current ROCm with a separate release process including version number scheme, a new documentation site and a laser focus on enabling applications on our datacenter GPU products.
 In short, the Instinct GPU driver enables your GPU to run applications, enables K8s and virtualization, and monitor GPU hardware and GPU processes. This annoucement delves into the changes and the impacts on our users.
 
-
-With one name and version for the entire stack, we run in to communication and release issues. 
+With one name and version for the entire stack, we run in to communication and release issues.
 What versions of ROCm userspace work with the ROCm driver version 6.4. The answer
 is ROCm userspace 6.0 to ROCm userpace 6.4 work with ROCm driver 6.4. The point is same name and versioning for both the driver and userspace becomes challenging for our uses and for our documentation.
 Consider a small fix in the ROCm driver that could go out tomorrow but under today's single release scheme for the driver and userspace will wait until the next release opportunity for the entire monolithic stack.
@@ -69,7 +68,7 @@ This is where you unleash your creativity. Please follow these general guideline
 
 • use actionable, hands-on, conversational approach, guiding your reader through the blog and its content, maintaining engagement. Use active voice, call-to-action (CTA) text (e.g. “Interested in learning more?”, “Run this function by using”, “Try implementing this yourself”)
 
-• keep your writing structured, engaging, and actionable. Divide the blog’s content into logical sections. 
+• keep your writing structured, engaging, and actionable. Divide the blog’s content into logical sections.
 
 • Make sure you provide the required background and prerequisites for your blog. Outline any foundational knowledge and tools the reader will likely require.
 
