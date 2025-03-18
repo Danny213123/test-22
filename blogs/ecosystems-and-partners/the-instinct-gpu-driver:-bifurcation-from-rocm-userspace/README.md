@@ -7,12 +7,12 @@ thumbnail: ''
 tags: Installation
 category: Ecosystems and Partners
 target_audience: All Instinct GPU customers are the target audience.
-key_value_propositions: A fundamental shift in our software release strategy to allow users to distinguish the Instinct GPU driver from the ROCm userspace. New applications where users do not need the ROCm userspace such as K8s, ISV applications and virtualization benefit from a separate driver distribution. Existing users will see the relationship between a single Instinct driver and multiple ROCm userspace versions clearly. In addition, future open source users can clearly differentiate upstream AMDGPU drivers from AMD Instinct driver distribution.
+key_value_propositions: A fundamental shift in our software release strategy to allow users to distinguish the Instinct GPU driver from the ROCm userspace. New applications where users do not need the ROCm userspace such as K8s, ISV applications and virtualization benefit from a separate driver distribution. Existing users will see the relationship between a single Instinct driver and multiple ROCm userspace versions clearly. In addition, future open source users can clearly differentiate upstream AMDGPU drivers from AMD's Instinct driver distribution.
 language: English
 myst:
     html_meta:
         "author": "Saad Rahim"
-        "description lang=en": "A fundamental shift in our software release strategy to allow users to distinguish the Instinct GPU driver from the ROCm userspace. New applications where users do not need the ROCm userspace such as K8s, ISV applications and virtualization benefit from a separate driver distribution. Existing users will see the relationship between a single Instinct driver and multiple ROCm userspace versions clearly. In addition, future open source users can clearly differentiate upstream AMDGPU drivers from AMD Instinct driver distribution."
+        "description lang=en": "A fundamental shift in our software release strategy to allow users to distinguish the Instinct GPU driver from the ROCm userspace. New applications where users do not need the ROCm userspace such as K8s, ISV applications and virtualization benefit from a separate driver distribution. Existing users will see the relationship between a single Instinct driver and multiple ROCm userspace versions clearly. In addition, future open source users can clearly differentiate upstream AMDGPU drivers from AMD's Instinct driver distribution."
         "keywords": "Instinct, GPU, amdgpu, ROCm, toolkit"
         "property=og:locale": "en_US"
         "amd_category": "Developer Resources"
@@ -51,12 +51,16 @@ SOFTWARE.
 
 # The Instinct GPU Driver: Bifurcation from ROCm userspace
 
-ROCm Blogs follow a consistent magazine article approach where there is no explicit introduction per se,
-but rather each blog starts with a brief, wide-scoped introductory text, without a section title,
-before moving into the blog’s first section.
-The introductory text should include a concise description of your blog: briefly describe for the
-reader how they will benefit from the blog, detailing its main deliverables. Please use an active-voice,
-call-to-action approach.
+Today's ROCm is synonymous with software for AMD's Instinct GPUs. ROCm describes
+everything from the driver to the runtime to the our libraries that enable AI and HPC software stacks. 
+Starting in ROCm 6.4, we begin the process to change our software ontology to create the Instinct Datacenter GPU driver. 
+This driver will bifurcate from ROCm with a separate release version number scheme, new documentation site and new focus on enabling applications on our datacenter GPU products.
+
+
+With one name and version for the entire stack, we run in to communication and release issues. 
+What versions of ROCm userspace work with the ROCm driver version 6.4. The answer
+is ROCm userspace 6.0 to ROCm userpace 6.4 work with ROCm driver 6.4. The point is same name and versioning for both the driver and userspace becomes challenging for our uses and for our documentation.
+Consider a small fix in the ROCm driver that could go out tomorrow but under today's single release scheme for the driver and userspace will wait until the next release opportunity for the entire monolithic stack.
 
 ## Body
 
