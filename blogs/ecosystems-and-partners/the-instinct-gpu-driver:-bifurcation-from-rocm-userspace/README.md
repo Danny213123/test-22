@@ -64,14 +64,11 @@ What versions of ROCm userspace work with the ROCm driver version 6.4. The answe
 is ROCm userspace 6.0 to ROCm userpace 6.4 work with ROCm driver 6.4. The point is same name and versioning for both the driver and userspace becomes challenging for our uses and for our documentation.
 Consider a small fix in the ROCm driver that could go out tomorrow but under today's single release scheme for the driver and userspace will wait until the next release opportunity for the entire monolithic stack.
 
-
-
 ## The Bifurcation Plan
 
 Leeway into figures, equations, etc.
 
 ## Instinct Driver version scheme
-
 
 ## Impacts on users
 
