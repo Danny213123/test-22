@@ -51,10 +51,11 @@ SOFTWARE.
 
 # The Instinct GPU Driver: Bifurcation from ROCm userspace
 
-Today's ROCm is synonymous with software for AMD's Instinct GPUs. ROCm describes
+Today ROCm is synonymous with software for AMD's Instinct GPUs. ROCm describes
 everything from the driver to the runtime to the our libraries that enable AI and HPC software stacks. 
-Starting in ROCm 6.4, we begin the process to change our software ontology to create the Instinct Datacenter GPU driver. 
-This driver will bifurcate from ROCm with a separate release version number scheme, new documentation site and new focus on enabling applications on our datacenter GPU products.
+Starting in ROCm 6.4, we begin the process to change our software ontology to include the Instinct Datacenter GPU driver. 
+This driver will bifurcate from the current ROCm with a separate release process including version number scheme, a new documentation site and a laser focus on enabling applications on our datacenter GPU products.
+In short, the Instinct GPU driver enables your GPU to run applications, enables K8s and virtualization, and monitor GPU hardware and GPU processes. This annoucement delves into the changes and the impacts on our users.
 
 
 With one name and version for the entire stack, we run in to communication and release issues. 
