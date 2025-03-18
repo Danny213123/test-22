@@ -57,49 +57,23 @@ Starting in ROCm 6.4, we begin the process to change our software ontology to in
 This driver will bifurcate from the current ROCm with a separate release process including version number scheme, a new documentation site and a laser focus on enabling applications on our datacenter GPU products.
 In short, the Instinct GPU driver enables your GPU to run applications, enables K8s and virtualization, and monitor GPU hardware and GPU processes. This annoucement delves into the changes and the impacts on our users.
 
+## More installation options? Why?
+
 With one name and version for the entire stack, we run in to communication and release issues.
 What versions of ROCm userspace work with the ROCm driver version 6.4. The answer
 is ROCm userspace 6.0 to ROCm userpace 6.4 work with ROCm driver 6.4. The point is same name and versioning for both the driver and userspace becomes challenging for our uses and for our documentation.
 Consider a small fix in the ROCm driver that could go out tomorrow but under today's single release scheme for the driver and userspace will wait until the next release opportunity for the entire monolithic stack.
 
-## Body
 
-This is where you unleash your creativity. Please follow these general guidelines:
 
-• use actionable, hands-on, conversational approach, guiding your reader through the blog and its content, maintaining engagement. Use active voice, call-to-action (CTA) text (e.g. “Interested in learning more?”, “Run this function by using”, “Try implementing this yourself”)
-
-• keep your writing structured, engaging, and actionable. Divide the blog’s content into logical sections.
-
-• Make sure you provide the required background and prerequisites for your blog. Outline any foundational knowledge and tools the reader will likely require.
-
-• When describing a process use step-by-step guide, employ numbered steps or subheadings to guide the reader through the process.
-
-• Integrate examples and use cases: provide real-world applications and scenarios. Reflect on common pitfalls and possible troubleshooting approaches, addressing potential mistakes and solutions.
+## The Bifurcation Plan
 
 Leeway into figures, equations, etc.
 
-## Sample markdown
+## Instinct Driver version scheme
 
-This section covers some markdown techniques commonly used in a blogs.
 
-This is a table.
-
-|      | SPX (MI300X) | CPX (MI300X) |
-| ---- | :----------: | :----------: |
-| NPS1 |      ✔       |      ✔       |
-| NPS4 |              |      ✔       |
-
-Below is a code snippet from the console. You can also use bash, C++, python and other languages.
-
-```console
-echo "c 226:128 rwm" > /sys/fs/cgroup/devices/devices.deny #Deny access to device 226:128 in docker (renderD128)
-
-echo "c 226:128 rwm" > /sys/fs/cgroup/devices/devices.allow #Allow access to device 226:128 in docker (renderD128)
-```
-
-```{note}
-This is how to add a note. See the [myst markdown admomition guide](https://mystmd.org/guide/admonitions) for more details.
-```
+## Impacts on users
 
 ## Summary
 
