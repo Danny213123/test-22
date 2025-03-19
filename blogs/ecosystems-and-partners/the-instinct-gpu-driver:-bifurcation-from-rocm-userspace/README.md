@@ -53,24 +53,37 @@ SOFTWARE.
 
 Today ROCm is synonymous with software for AMD's Instinct GPUs. ROCm describes
 everything from the driver to the runtime to the our libraries that enable AI and HPC software stacks.
-Starting in ROCm 6.4, we begin the process to change our software ontology to include the Instinct Datacenter GPU driver.
-This driver will bifurcate from the current ROCm with a separate release process including version number scheme, a new documentation site and a laser focus on enabling applications on our datacenter GPU products.
-In short, the Instinct GPU driver enables your GPU to run applications, enables K8s and virtualization, and monitor GPU hardware and GPU processes. This annoucement delves into the changes and the impacts on our users.
+Starting in ROCm 6.4, we modify our software ontology to include the Instinct Datacenter GPU driver.
+This Instinct driver will bifurcate from the current ROCm driver, also known as ROCk, with a separate release process including an independent 
+version number scheme, a new documentation site and a laser focus on enabling applications on our datacenter GPU products.
+This annoucement delves into the changes and the impacts on our users.
 
-## More installation options? Why?
+## Instinct driver support policy
 
-With one name and version for the entire stack, we run in to communication and release issues.
-What versions of ROCm userspace work with the ROCm driver version 6.4. The answer
-is ROCm userspace 6.0 to ROCm userpace 6.4 work with ROCm driver 6.4. The point is same name and versioning for both the driver and userspace becomes challenging for our uses and for our documentation.
-Consider a small fix in the ROCm driver that could go out tomorrow but under today's single release scheme for the driver and userspace will wait until the next release opportunity for the entire monolithic stack.
+Software modularity is key to improving usability for our users. Splitting the driver makes it clear
+that a single version of the driver can support software develoment with multiple versions of ROCm. This also 
+means you can run software built against multiple versions of ROCm without upgrading or downgrading the driver based on our Instinct driver support policy.
+The Instinct driver support policy estabilishes forward and backward requirements compatiblity between the Instinct driver with ROCm toolkits. Compatiblity is maintained for ROCm toolkit
+releases upto one prior to the driver release and ROCm toolkits released upto one year after the driver release.
+
 
 ## The Bifurcation Plan
 
-Leeway into figures, equations, etc.
+Separation of the software releases is slowly phased in. ROCm 6.4 creates a separate documentation site for the Instinct driver while keeping 
 
-## Instinct Driver version scheme
+## Instinct driver version scheme
+
+Package names will keep the component version numbers, in the same way as now.  We will repurpose the ROCm upgrade version field into an 8-digit field to represent the KMD version number, taking into account the point release numbering structure.  Examples of new package naming for Release 30.1.2.3:
+Kernel driver: amdgpu-dkms_6.10.5.30010203-2109964.24.04_all.deb
+UMD component with its own version number: libgl1-amdgpu-mesa-glx_24.3.0.30010203-2109964.24.04_i386.deb
+For the meta-packages, the patch and point release numbers are also be included, for example, amdgpu-core_30.1.2.3.30010203-2109964.24.04_all.deb 
+Usage of version number:
+The Linux download page at amd.com will use the new numbering structure.  For Release 30.1.2.3, the official name will be "Radeon SW For Linux 30.1.2.3".
+The "Instinct Driver" will be referred to as "Instinct Driver 30.1.2.3".
+The path in repo.radeon.com will use the new version number, for example https://repo.radeon.com/amdgpu/30.1.2.3/ .
 
 ## Impacts on users
+
 
 ## Summary
 
