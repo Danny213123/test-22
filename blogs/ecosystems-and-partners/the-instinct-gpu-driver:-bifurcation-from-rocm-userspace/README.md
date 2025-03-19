@@ -53,10 +53,24 @@ SOFTWARE.
 
 Today ROCm is synonymous with software for AMD's Instinct GPUs. ROCm describes
 everything from the driver to the runtime to the our libraries that enable AI and HPC software stacks.
-Starting in ROCm 6.4, we modify our software ontology to include the Instinct Datacenter GPU driver.
-This Instinct driver will bifurcate from the current ROCm driver, also known as ROCk, with a separate release process including an independent
+Starting in ROCm 6.4, we expand our software family to include the Instinct Datacenter GPU driver.
+The Instinct driver bifurcates from the current ROCm driver with a separate release process including an independent
 version number scheme, a new documentation site and a laser focus on enabling applications on our datacenter GPU products.
-This annoucement delves into the changes and the impacts on our users.
+This annoucement helps you prepare for these changes and mitigate impacts.
+
+## What is the Instinct driver?
+
+AMD's open source GPU driver is available through several channels. Users currently get the driver through
+ROCm installations, through Radeon Software for Linux and it is present in many Linuux kernel builds. The build of
+the amdgpu driver and related packages currently distributed and documented with the ROCm, is now renamed as
+the Instinct driver. Previously, it was referred to as the ROCm driver or ROCk. The source code of the driver
+is published on ROCm/ROCK-Kernel-Driver (soon to be renamed to ROCm/instict-driver). You may ask, "This just 
+a renaming, why do I care?". The changes that happen with ROCm 6.4 are just nomenclature related and may be ignored
+without repurcussion. Overtime, the Instinct driver will focus exclusively on the subset of features neeeded
+for headless datacenter GPUs (also referred to accelerators or AI cards), i.e. GPUs without a display out. 
+New installation options are planned to remove permisssion complexities such as user membership
+in the video or render groups. Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
+
 
 ## Instinct driver support policy
 
