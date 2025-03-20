@@ -143,7 +143,14 @@ o	You may upgrade your Instinct driver independently of ROCm userspace, or vice 
 
 ## Summary
 
-
+Starting with the ROCm 6.4 release, AMD is making software for Instinct GPUs more modular by separating
+the user space components from the driver space components. Previously, ROCm releases and its associated
+versioning described both the userspace and driver. In ROCm 6.4, the documentation is for the driver space
+and system management moves to instinct.docs.amd.com. Information on the variant of the amdgpu driver built
+for Instinct GPUs, is available on the Instinct driver website. Source code is available at ROCm/ROCK-Kernel-Driver
+(with an upcoming repo rename to instinct-driver). For the 6.4 release, the versioning scheme for the Instinct driver
+does not change. It is referred to as the Instinct driver version 6.4. In the subsequent ROCm minor release,
+currently planned as ROCm 6.5, the Instinct driver version will separate from ROCm versioning. 
 
 ## Disclaimers
 
