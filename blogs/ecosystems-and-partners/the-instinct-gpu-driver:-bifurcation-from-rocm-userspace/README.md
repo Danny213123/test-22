@@ -73,11 +73,11 @@ for headless datacenter GPUs (also referred to accelerators or AI cards), i.e. G
 in the video or render groups. 
  - Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
  - A future driver release series may be maintained for security fixes for an extended period as long term stability driver.
-  
+
 Please note that the Instinct drivers will not take steps to exclude products from other AMD GPU families although certain features may be limited by hardware capabilities.
 
 
-## A modular release with clear support policies 
+## Why separate?
 
 Software modularity is key to improving usability for our users. Splitting the driver makes it clear
 that a single version of the driver can support software develoment with multiple versions of ROCm. This also
