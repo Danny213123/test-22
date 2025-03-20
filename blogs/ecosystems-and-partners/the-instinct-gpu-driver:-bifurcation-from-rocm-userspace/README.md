@@ -73,6 +73,7 @@ for headless datacenter GPUs (also referred to accelerators or AI cards), i.e. G
 in the video or render groups.
 - Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
 - A future driver release series may be maintained for security fixes for an extended period as long term stability driver.
+- AMD-SMI and other low level components currently included in ROCm will transition to the Instinct driver releases in the future. 
 
 Please note that the Instinct drivers will not take steps to exclude products from other AMD GPU families although certain features may be limited by hardware capabilities.
 
@@ -84,9 +85,12 @@ means you can run software built against multiple versions of ROCm without upgra
 The Instinct driver support policy estabilishes forward and backward requirements compatiblity between the Instinct driver with ROCm toolkits. Compatiblity is maintained for ROCm toolkit
 releases upto one prior to the driver release and ROCm toolkits released upto one year after the driver release.
 
-## The Bifurcation Plan
+## The transition
 
-Separation of the software releases is slowly phased in. ROCm 6.4 creates a separate documentation site for the Instinct driver while keeping
+Separation of the software releases occurs in phases. During the ROCm 6.4 release, we create a separate
+documentation site for the Instinct driver while keeping the version number for the Instinct driver synced
+with ROCm. Coincinding with the ROCm 6.5 release later this year, the version numbering of the Instinct
+driver release diverges from ROCm.
 
 ## Instinct driver version scheme
 
@@ -99,7 +103,7 @@ The Linux download page at amd.com will use the new numbering structure.  For Re
 The "Instinct Driver" will be referred to as "Instinct Driver 30.1.2.3".
 The path in repo.radeon.com will use the new version number, for example https://repo.radeon.com/amdgpu/30.1.2.3/ .
 
-## Impacts on users
+## 
 
 ## Summary
 
