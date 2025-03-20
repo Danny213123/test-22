@@ -64,18 +64,17 @@ AMD's open source GPU driver is available through several channels. Users curren
 ROCm installations, through Radeon Software for Linux and it is present in many Linuux kernel builds. The build of
 the amdgpu driver and related packages currently distributed and documented with the ROCm, is now renamed as
 the Instinct driver. Previously, it was referred to as the ROCm driver or ROCk. The source code of the driver
-is published on ROCm/ROCK-Kernel-Driver (soon to be renamed to ROCm/instict-driver). You may ask, "This just 
+is published on ROCm/ROCK-Kernel-Driver (soon to be renamed to ROCm/instict-driver). You may ask, "This just
 a renaming, why do I care?". The changes that happen with ROCm 6.4 are just nomenclature related and may be ignored
 without repurcussion for now. In the future, the Instinct driver will focus exclusively on the subset of features neeeded
 for headless datacenter GPUs (also referred to accelerators or AI cards), i.e. GPUs without a display out. New and exciting futures are planned for the Instinct driver:
 
- - New installation options to remove permisssion complexities such as user membership
-in the video or render groups. 
- - Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
- - A future driver release series may be maintained for security fixes for an extended period as long term stability driver.
+- New installation options to remove permisssion complexities such as user membership
+in the video or render groups.
+- Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
+- A future driver release series may be maintained for security fixes for an extended period as long term stability driver.
 
 Please note that the Instinct drivers will not take steps to exclude products from other AMD GPU families although certain features may be limited by hardware capabilities.
-
 
 ## Why separate?
 
