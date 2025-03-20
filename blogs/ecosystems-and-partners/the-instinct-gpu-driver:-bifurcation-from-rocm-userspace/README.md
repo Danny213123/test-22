@@ -73,7 +73,7 @@ for headless datacenter GPUs (also referred to accelerators or AI cards), i.e. G
 in the video or render groups.
 - Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
 - A future driver release series may be maintained for security fixes for an extended period as long term stability driver.
-- AMD-SMI and other low level components currently included in ROCm will transition to the Instinct driver releases in the future. 
+- AMD-SMI and other system management components currently included in ROCm will transition to the Instinct driver releases in the future. 
 
 Please note that the Instinct drivers will not take steps to exclude products from other AMD GPU families although certain features may be limited by hardware capabilities.
 
@@ -119,3 +119,4 @@ PROVIDED “AS IS” WITHOUT A WARRANTY OF ANY KIND. USE OF SUCH THIRD-PARTY CON
 IS DONE AT YOUR SOLE DISCRETION AND UNDER NO CIRCUMSTANCES WILL AMD BE LIABLE TO
 YOU FOR ANY THIRD-PARTY CONTENT. YOU ASSUME ALL RISK AND ARE SOLELY RESPONSIBLE
 FOR ANY DAMAGES THAT MAY ARISE FROM YOUR USE OF THIRD-PARTY CONTENT.
+ 
