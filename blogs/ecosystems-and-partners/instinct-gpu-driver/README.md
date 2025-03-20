@@ -74,6 +74,7 @@ in the video or render groups.
 - Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
 - A future driver release series may be maintained for security fixes for an extended period as long term stability driver.
 - AMD-SMI and other system management components currently included in ROCm will transition to the Instinct driver releases in the future.
+- Users choosing to use amdgpu from the stock Linux kernels may choose to skip all the installation documentation for ROCm that references the Instinct driver. Please note this is not an 
 
 Please note that the Instinct drivers will not take steps to exclude products from other AMD GPU families although certain features may be limited by hardware capabilities.
 
