@@ -106,16 +106,16 @@ The path in repo.radeon.com will use the new version number, for example https:/
 ## Common installation scenarios
 
 Let's go over a few installation scenarios made clearer through this our nomenclature change. Please note that the all
-one installation option for ROCm with the Instinct driver is not going away. 
+one installation option for ROCm with the Instinct driver is not going away.
 
 ### 3rd party applications and containers
 
 Many of our [software ecosystem application partners](link to ISV applications page) bundle ROCm binaries in their installers.
-Installing ROCm is redundant in this situation. Currently, the same version number is used between ROCm userspace and ROCm driver. 
+Installing ROCm is redundant in this situation. Currently, the same version number is used between ROCm userspace and ROCm driver.
 Many users end up mistakenly installing all of ROCm to enable their application. Now, the user will just install the Instinct driver and
 the run the ISV installer.
 
-Our nomenclature changes also make it clear to container users you don't need to install ROCm to run a container. Just the Instinct 
+Our nomenclature changes also make it clear to container users you don't need to install ROCm to run a container. Just the Instinct
 driver will suffice for your needs.
 
 ### Managing a large installation with multiple ROCm versions
@@ -123,14 +123,14 @@ driver will suffice for your needs.
 ### Build server
 
 s
-•	Clearly defined options for installation combinations:
-o	Instinct driver and multiple supported ROCm userspace versions
-o	Instinct driver only to use with containers and ISV applications
-o	ROCm userspace only for software builds and testing
-o	Using the amdgpu driver bundled with Linux distributions and ROCm userspace released from AMD. Note: AMD does not validate this combination but is actively working with several Linux distributions (For blog only)  
-•	Upgrade options also become more visible
-o	You may upgrade your Instinct driver independently of ROCm userspace, or vice versa
-o	Bug fixes in either the Instinct driver or ROCm user space maybe released independently versus the current mono-release.
+• Clearly defined options for installation combinations:
+o Instinct driver and multiple supported ROCm userspace versions
+o Instinct driver only to use with containers and ISV applications
+o ROCm userspace only for software builds and testing
+o Using the amdgpu driver bundled with Linux distributions and ROCm userspace released from AMD. Note: AMD does not validate this combination but is actively working with several Linux distributions (For blog only)  
+• Upgrade options also become more visible
+o You may upgrade your Instinct driver independently of ROCm userspace, or vice versa
+o Bug fixes in either the Instinct driver or ROCm user space maybe released independently versus the current mono-release.
 
 ## Summary
 
