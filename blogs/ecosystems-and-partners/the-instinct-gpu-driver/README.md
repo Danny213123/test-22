@@ -118,6 +118,7 @@ the run the ISV installer.
 
 ### Build server
 
+s
 •	Clearly defined options for installation combinations:
 o	Instinct driver and multiple supported ROCm userspace versions
 o	Instinct driver only to use with containers and ISV applications
