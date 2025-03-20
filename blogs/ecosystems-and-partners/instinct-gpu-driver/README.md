@@ -3,7 +3,7 @@ blogpost: true
 blog_title: "The Instinct GPU Driver: Bifurcation from ROCm userspace"
 date: 18 Mar 2025
 author: 'Saad Rahim'
-thumbnail: ''
+thumbnail: 'divergence.png'
 tags: Installation
 category: Ecosystems and Partners
 target_audience: All Instinct GPU customers are the target audience.
