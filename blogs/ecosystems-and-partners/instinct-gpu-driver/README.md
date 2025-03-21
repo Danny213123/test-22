@@ -60,7 +60,7 @@ This annoucement helps you prepare for these changes and mitigate impacts.
 
 ## What is the Instinct driver?
 
-AMD's open source GPU driver is available through several channels. Users currently get the driver through
+AMD's open source GPU driver is available through several channels. Users currently get the driver, amdgpu through
 ROCm releases, through Radeon Software for Linux and it is present in many Linux kernel builds. The build of
 the amdgpu driver and related packages currently distributed and documented with the ROCm, is now renamed as
 the Instinct driver. Previously, it was referred to as the ROCm driver or ROCk. The source code of the driver
@@ -97,6 +97,9 @@ documentation site for the Instinct driver while keeping the version number for 
 with ROCm. Coincinding with the ROCm 6.5 release later this year, the version numbering of the Instinct
 driver release diverges from ROCm.
 
+Note: The transition plan does not change or introduce any new features, it is a change designed to make our
+capabilities more visible. 
+
 ## Instinct driver version scheme
 
 Package names will keep the component version numbers, in the same way as now.  We will repurpose the ROCm upgrade version field into an 8-digit field to represent the KMD version number, taking into account the point release numbering structure.  Examples of new package naming for Release 30.1.2.3:
@@ -117,30 +120,25 @@ one installation option for ROCm with the Instinct driver is not going away.
 
 Many of our [software ecosystem application partners](link to ISV applications page) bundle ROCm binaries in their installers.
 Installing ROCm is redundant in this situation. Currently, the same version number is used between ROCm userspace and ROCm driver. 
-Many users end up mistakenly installing all of ROCm to enable their application. Now, the user will just install the Instinct driver and
-the run the ISV installer.
+Many users end up mistakenly installing all of ROCm to enable their application. With easier to follow instructions, the user installs the Instinct driver and
+runs the ISV installer.
 
 Our nomenclature changes also make it clear to container users you don't need to install ROCm to run a container. Just the Instinct 
-driver will suffice for your needs.
+driver suffices.
 
 ### Managing a server with multiple ROCm versions
 
+A server with multiple versions of the ROCm toolkit and one Instinct driver version is often used by developers. 
+Let's imagine a system with 3 versions of ROCm installed: ROCm 6.1.0, ROCm 6.2.0, and ROCm 6.4.0. The user also install
+Instinct driver 30.1.0.0 in the summer of 2025. This Instinct driver supports all ROCm versions release 1 year before
+and 1 year after. Fall of 2025, the user may install ROCm 7.0 and not upgrade the driver. Alternatively, the user may
+upgrade the driver to Instinct 30.2.0.0 and still have the currently installed ROCm versions fully functional.
 
 
 ### Build server
 
-
-
-
-s
-•	Clearly defined options for installation combinations:
-o	Instinct driver and multiple supported ROCm userspace versions
-o	Instinct driver only to use with containers and ISV applications
-o	ROCm userspace only for software builds and testing
-o	Using the amdgpu driver bundled with Linux distributions and ROCm userspace released from AMD. Note: AMD does not validate this combination but is actively working with several Linux distributions (For blog only)  
-•	Upgrade options also become more visible
-o	You may upgrade your Instinct driver independently of ROCm userspace, or vice versa
-
+Scenarios where a server just builds code can install the ROCm toolkit. As ROCm no longer means installing the driver,
+users may make the choice to skip the driver installation easily.
 
 ## Summary
 
