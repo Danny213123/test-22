@@ -1,7 +1,7 @@
 ---
 blogpost: true
 blog_title: "The Instinct GPU Driver: Bifurcation from ROCm userspace"
-date: 18 Mar 2025
+date: 21 Mar 2025
 author: 'Saad Rahim'
 thumbnail: 'divergence.png'
 tags: Installation
