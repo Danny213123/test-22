@@ -74,7 +74,7 @@ in the video or render groups.
 - Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
 - A future driver release series may be maintained for security fixes for an extended period as long term stability driver.
 - AMD-SMI and other system management components currently included in ROCm will transition to the Instinct driver releases in the future.
-- Users choosing to use amdgpu from the stock Linux kernels may choose to skip all the installation documentation for ROCm that references the Instinct driver. Please note this is not an 
+- Users choosing to use amdgpu from the stock Linux kernels may choose to skip all the installation documentation for ROCm that references the Instinct driver. Please note this is not an
 
 Please note that the Instinct drivers will not take steps to exclude products from other AMD GPU families although certain features may be limited by hardware capabilities.
 
@@ -88,7 +88,7 @@ releases upto one prior to the driver release and ROCm toolkits released upto on
 
 Separate releases for the Instinct driver and ROCm allows us to fix and release  Instinct driver issues independently
 from ROCm release timelines. Today, due to our monolithic release structure, fixes in the driver are not visible
-from a separate release. 
+from a separate release.
 
 ## The transition
 
@@ -98,7 +98,7 @@ with ROCm. Coincinding with the ROCm 6.5 release later this year, the version nu
 driver release diverges from ROCm.
 
 Note: The transition plan does not change or introduce any new features, it is a change designed to make our
-capabilities more visible. 
+capabilities more visible.
 
 ## Instinct driver version scheme
 
@@ -114,26 +114,25 @@ The path in repo.radeon.com will use the new version number, for example https:/
 ## Common installation scenarios
 
 Let's go over a few installation scenarios made clearer through this our nomenclature change. Please note that the all
-one installation option for ROCm with the Instinct driver is not going away. 
+one installation option for ROCm with the Instinct driver is not going away.
 
 ### 3rd party applications or containers
 
 Many of our [software ecosystem application partners](link to ISV applications page) bundle ROCm binaries in their installers.
-Installing ROCm is redundant in this situation. Currently, the same version number is used between ROCm userspace and ROCm driver. 
+Installing ROCm is redundant in this situation. Currently, the same version number is used between ROCm userspace and ROCm driver.
 Many users end up mistakenly installing all of ROCm to enable their application. With easier to follow instructions, the user installs the Instinct driver and
 runs the ISV installer.
 
-Our nomenclature changes also make it clear to container users you don't need to install ROCm to run a container. Just the Instinct 
+Our nomenclature changes also make it clear to container users you don't need to install ROCm to run a container. Just the Instinct
 driver suffices.
 
 ### Managing a server with multiple ROCm versions
 
-A server with multiple versions of the ROCm toolkit and one Instinct driver version is often used by developers. 
+A server with multiple versions of the ROCm toolkit and one Instinct driver version is often used by developers.
 Let's imagine a system with 3 versions of ROCm installed: ROCm 6.1.0, ROCm 6.2.0, and ROCm 6.4.0. The user also install
 Instinct driver 30.1.0.0 in the summer of 2025. This Instinct driver supports all ROCm versions release 1 year before
 and 1 year after. Fall of 2025, the user may install ROCm 7.0 and not upgrade the driver. Alternatively, the user may
 upgrade the driver to Instinct 30.2.0.0 and still have the currently installed ROCm versions fully functional.
-
 
 ### Build server
 
@@ -149,7 +148,7 @@ and system management moves to instinct.docs.amd.com. Information on the variant
 for Instinct GPUs, is available on the Instinct driver website. Source code is available at ROCm/ROCK-Kernel-Driver
 (with an upcoming repo rename to instinct-driver). For the 6.4 release, the versioning scheme for the Instinct driver
 does not change. It is referred to as the Instinct driver version 6.4. In the subsequent ROCm minor release,
-currently planned as ROCm 6.5, the Instinct driver version will separate from ROCm versioning. 
+currently planned as ROCm 6.5, the Instinct driver version will separate from ROCm versioning.
 
 ## Disclaimers
 
