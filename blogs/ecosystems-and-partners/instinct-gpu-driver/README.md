@@ -12,7 +12,7 @@ language: English
 myst:
     html_meta:
         "author": "Saad Rahim"
-        "description lang=en": "A fundamental shift in our software release strategy to allow users to distinguish the Instinct GPU driver from the ROCm userspace. New applications where users do not need the ROCm userspace such as K8s, ISV applications and virtualization benefit from a separate driver distribution. Existing users will see the relationship between a single Instinct driver and multiple ROCm userspace versions clearly. In addition, future open source users can clearly differentiate upstream AMDGPU drivers from AMD's Instinct driver distribution."
+        "description lang=en": "We introduce the new Instinct driver - a modular GPU driver with independent releases simplifying workflows, system setup, and enhancing compatibility across toolkit versions."
         "keywords": "Instinct, GPU, amdgpu, ROCm, toolkit"
         "property=og:locale": "en_US"
         "amd_category": "Developer Resources"
