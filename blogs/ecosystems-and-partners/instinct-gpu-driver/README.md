@@ -83,7 +83,7 @@ Please note that the Instinct drivers will not take steps to exclude products fr
 Software modularity is key to improving usability for our users. Splitting the driver makes it clear
 that a single version of the driver can support software develoment with multiple versions of ROCm. This also
 means you can run software built against multiple versions of ROCm without upgrading or downgrading the driver based on our Instinct driver support policy.
-The Instinct driver support policy estabilishes forward and backward requirements compatiblity between the Instinct driver with ROCm toolkits. Compatiblity is maintained for ROCm toolkit
+The Instinct driver support policy establishes forward and backward requirements compatibility between the Instinct driver with ROCm toolkits. Compatibility is maintained for ROCm toolkit
 releases upto one prior to the driver release and ROCm toolkits released upto one year after the driver release.
 
 Separate releases for the Instinct driver and ROCm allows us to fix and release  Instinct driver issues independently
