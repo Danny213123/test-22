@@ -69,7 +69,7 @@ a renaming, why do I care?". The changes that happen with ROCm 6.4 are nomenclat
 without repurcussion for now. In the future, the Instinct driver will focus exclusively on the subset of features neeeded
 for headless datacenter GPUs (also referred to accelerators or AI cards), i.e. GPUs without a display out. New and exciting futures are planned for the Instinct driver:
 
-- New installation options to remove permisssion complexities such as user membership
+- New installation options to remove permission complexities such as user membership
 in the video or render groups.
 - Future installation options may exclude packages needed to run display outputs to reduce the driver footprint.
 - A future driver release series may be maintained for security fixes for an extended period as long term stability driver.
