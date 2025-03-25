@@ -49,7 +49,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 --->
 
-# The Instinct GPU Driver: Bifurcation from ROCm userspace
+# The Instinct GPU Driver: Bifurcation from ROCm Userspace
 
 Today ROCm is synonymous with software for AMD's Instinct GPUs. ROCm describes
 everything from the driver to the runtime to the our libraries that enable AI and HPC software stacks.
