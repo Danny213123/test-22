@@ -141,7 +141,7 @@ users may make the choice to skip the driver installation easily.
 
 ## Summary
 
-Starting with the ROCm 6.4 release, AMD is making software for Instinct GPUs more modular by separating
+As we showed you, starting with the ROCm 6.4 release you can expect a smoother AI and HPC development experience, as AMD is making software for Instinct GPUs more modular by separating
 the user space components from the driver space components. Previously, ROCm releases and its associated
 versioning described both the userspace and driver. In ROCm 6.4, the documentation is for the driver space
 and system management moves to instinct.docs.amd.com. Information on the variant of the amdgpu driver built
