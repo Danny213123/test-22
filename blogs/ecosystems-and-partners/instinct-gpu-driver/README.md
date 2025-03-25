@@ -1,6 +1,6 @@
 ---
 blogpost: true
-blog_title: "The Instinct GPU Driver: Bifurcation from ROCm userspace"
+blog_title: "ROCm Gets Modular: Meet the New Instinct Datacenter GPU Driver"
 date: 21 Mar 2025
 author: 'Saad Rahim, Danny Guan'
 thumbnail: 'divergence.png'
