@@ -56,7 +56,7 @@ everything from the driver to the runtime to the our libraries that enable AI an
 Starting in ROCm 6.4, we expand our software family to include the Instinct Datacenter GPU driver.
 The Instinct driver bifurcates from the current ROCm driver with a separate release process including an independent
 version number scheme, a new documentation site and a laser focus on enabling applications on our datacenter GPU products.
-This annoucement helps you prepare for these changes and mitigate impacts.
+This blog will help you prepare for these changes and mitigate impacts. You will learn how the new Instinct Driver makes your software deployment, container usage, and long-term maintenance more flexible and future-ready.
 
 ## What is the Instinct driver?
 
