@@ -90,6 +90,14 @@ Separate releases for the Instinct driver and ROCm allows us to fix and release 
 from ROCm release timelines. Today, due to our monolithic release structure, fixes in the driver are not visible
 from a separate release.
 
+### Software Life Cycle Policy
+
+![Software Support Matrix](support_matrix.jpg)
+
+#### Support Policy Changes
+
+* Software Support Cycle changes starting ROCm 6.4, change from 6 months of support forward and back from release to a total of 1 year back and forth.
+
 ## The transition
 
 Separation of the software releases occurs in phases. During the ROCm 6.4 release, we create a separate
